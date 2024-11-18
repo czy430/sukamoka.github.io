@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<!-- 
+            ◢＼　 ☆　　 ／◣
+    　  　∕　　﹨　╰╮∕　　﹨
+    　  　▏　　～～′′～～ 　｜
+    　　  ﹨／　　　　　　 　＼∕
+    　 　 ∕ 　　●　　　 ●　＼
+      ＝＝　○　∴·╰╯　∴　○　＝＝
+    　    ╭──╮　　　　　╭──╮
+  ╔═ ∪∪∪═Mashiro&Hitomi═∪∪∪═╗
+--><html lang="zh-Hans">
+
+<head>
+	<meta name="theme-color">
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="https://s.nmxc.ltd/sakurairo_vision/@2.6/fontawesome/css/all.min.css" type="text/css" media="all">
+		<link rel="shortcut icon" href="https://sukamoka.github.io/wp-content/uploads/2023/09/Chtholly_2.png">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	
+	<title>高等数学初步 &#8211; 珂学小屋</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//s.nmxc.ltd">
+<link rel="stylesheet" id="wp-block-library-css" href="https://sukamoka.github.io/wp-includes/css/dist/block-library/style.min.css?ver=6.7" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="saukra-css-css" href="https://sukamoka.github.io/wp-content/themes/Sakurairo-2.6.2/style.css?ver=2.6.2" type="text/css" media="all">
+<link rel="stylesheet" id="entry-content-css" href="https://sukamoka.github.io/wp-content/themes/Sakurairo-2.6.2/css/theme/sakura.css?ver=2.6.2" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://sukamoka.github.io/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="https://sukamoka.github.io/wp-json/wp/v2/posts/279">
+<link rel="canonical" href="https://sukamoka.github.io/2023/09/07/%e9%ab%98%e7%ad%89%e6%95%b0%e5%ad%a6%e5%88%9d%e6%ad%a5/">
+<link rel="shortlink" href="https://sukamoka.github.io/?p=279">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://sukamoka.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fsukamoka.github.io%2F2023%2F09%2F07%2F%25e9%25ab%2598%25e7%25ad%2589%25e6%2595%25b0%25e5%25ad%25a6%25e5%2588%259d%25e6%25ad%25a5%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://sukamoka.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fsukamoka.github.io%2F2023%2F09%2F07%2F%25e9%25ab%2598%25e7%25ad%2589%25e6%2595%25b0%25e5%25ad%25a6%25e5%2588%259d%25e6%25ad%25a5%2F#038;format=xml">
+<style>.site-top .lower nav {display: block !important;}
+:root{
+    --theme-skin: #609ed7;
+    --theme-skin-matching:#609ed7;
+    --infor_bar_bgcolor:rgba(255,255,255,0.6);
+    --style_menu_selection_radius:10px;
+    --post_list_matching_color:#609ed7;
+    --load_nextpage_svg:url("https://s.nmxc.ltd/sakurairo_vision/@2.6/load_svg/ball.svg");
+    --style_menu_radius:10px;
+    --post-list-thumb: #e8e8e8;
+    --friend-link-shadow: #e8e8e8;
+    --friend-link-title: #ac354b;
+    --comment_area_matching: #6667ab;
+    --comment_area_shadow: #e8e8e8;
+    --shuoshuo_background_color1:#609ed7;
+    --shuoshuo_background_color2:#609ed7;
+    --inline_code_background_color:#F2F1F1;
+        --theme-skin-dark:  #609ed7;
+    --global-font-weight:300;
+    --theme-dm-background_transparency:0.6;
+    --exhibition_area_matching_color:#a0daa9;
+    --inline_code_background_color_in_dark_mode:#505050;
+}
+.the-feature.from_left_and_right .info,.the-feature.from_left_and_right .info h3{background: rgba(255,255,255,0.4) ;}
+
+/*白猫样式Logo*/
+
+
+/*非全局色彩管理*/
+.post-date {
+    background-color: #609ed726;
+}
+
+.center-text{
+color: #FFF ;
+font-size: 80px;
+}
+.Ubuntu-font,.center-text{
+font-family:  ;
+}
+
+.notice i ,
+.notice {
+    color: #999;
+}
+
+.notice {
+    border: 1px solid #E6E6E6;
+}
+
+.entry-content th {
+    background-color: #609ed7}
+
+
+#centerbg{}
+
+/*预加载部分*/
+
+
+/*深色模式*/
+/*可变项目*/
+
+/*深色模式控件透明度*/
+body.dark .header-info,
+body.dark .header-shuo,
+body.dark .top-social img
+{color:#fff;background:rgba(51,51,51,0.6);}
+
+body.dark .the-feature.from_left_and_right .info
+{background-color: rgba(51,51,51,0.6);}
+
+body.dark .yya,
+body.dark input[type=submit] 
+{background-color:rgba(38,38,38,0.6) !important;}
+
+/*深色模式自定义颜色*/
+body.dark .headertop-down svg path 
+{fill: rgba(51,51,51,0.8) !important;transition: all 0.8s ease !important;}
+
+/*深色模式图像亮度*/
+body.dark img,
+body.dark .highlight-wrap,
+body.dark iframe,
+body.dark .entry-content .aplayer,
+body.dark .post-thumb video
+{filter:brightness(1);}
+@media (max-width: 1200px){
+body.dark .site-top .lower nav.navbar ul 
+{background: rgba(255,255,255,0);}
+}
+
+/*字体*/
+
+
+.serif{
+font-family: !important ;
+font-size: 15px;
+}
+
+body{
+font-family: !important;
+font-size: 15px;
+}
+
+.site-top ul li a,.header-user-name,.header-user-menu a {
+font-family:Noto Serif SC !important;
+}
+
+
+.site-title a{
+font-family: 'Noto Serif SC';
+}
+
+
+.site-info,.site-info a{
+font-family:Noto Serif SC !important;
+}
+
+.skin-menu p{
+font-family:Noto Serif SC !important;
+}
+
+h1.main-title,h1.fes-title{
+font-family:Noto Serif SC;
+}
+
+.header-info p, .header-shuo p{
+font-family:Noto Serif SC !important;
+font-size: 18px;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel {
+font-family:Noto Serif SC !important;
+}
+
+.post-list-thumb .post-title h3{
+font-size: 20px !important;
+}
+
+.post-meta, .post-meta a{
+font-size: 14px !important;
+}
+
+.pattern-center h1.cat-title,
+.pattern-center h1.entry-title {
+font-size: 40px ;
+}
+.pattern-center-sakura h1.cat-title,
+.pattern-center-sakura h1.entry-title {
+font-size: 40px !important;
+}
+
+.single-center .single-header h1.entry-title {
+font-size: 36px ;
+}
+
+/*鼠标*/
+body{
+cursor: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/cursor/normal.cur), auto;
+}
+
+.headertop-down,
+#waifu #live2d,
+.aplayer svg,
+.aplayer.aplayer-narrow .aplayer-body,
+.aplayer.aplayer-narrow .aplayer-pic,
+#emotion-toggle,
+.emoji-item,
+.emotion-box,
+.emotion-item,
+.on-hover,
+.tieba-container span,
+#moblieGoTop,
+#changskin{
+cursor: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/cursor/No_Disponible.cur), auto;
+}
+
+a,
+.ins-section .ins-section-header,
+.font-family-controls button,
+.menu-list li,.ins-section .ins-search-item,
+.ins-section .ins-search-item .ins-search-preview{
+cursor: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/cursor/ayuda.cur), auto;
+}
+
+p,
+.highlight-wrap code,
+.highlight-wrap,
+.hljs-ln-code .hljs-ln-line{
+cursor: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/cursor/texto.cur), auto;
+}
+
+a:active{
+cursor: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/cursor/work.cur), alias;
+}
+
+/*背景类*/
+.comment-respond textarea {
+background-image: url(); 
+}
+
+.search-form.is-visible{
+background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/iloli.gif);
+}
+
+.site-footer {
+background-color: rgba(255, 255, 255,0.8);
+}
+
+.wrapper {
+background-color: rgba(255, 255, 255,0.8);
+}
+
+/*首页圆角设置*/
+.header-info,.header-shuo{
+border-radius: 15px;
+grid-row: 1;
+grid-column: 1;
+}
+
+
+.focusinfo img{
+border-radius: 15px;
+}
+
+.focusinfo .header-tou img{
+border-radius: 100px;
+}
+
+/*标题横线动画*/
+.single-center header.single-header .toppic-line{
+position:relative;bottom:0;left:0;display:block;width:100%;height:2px;background-color:#fff;animation:lineWidth 2.5s;animation-fill-mode:forwards;}
+@keyframes lineWidth{0%{width:0;}
+100%{width:100%;}
+}
+
+/*标题动画*/
+.entry-title,.single-center .entry-census a,.entry-census,.post-list p,.p-time,.feature{
+	-moz-animation: fadeInDown 2s;
+    -webkit-animation:fadeInDown 2s;
+	animation: fadeInDown 2s;
+}
+@-moz-keyframes fadeInUp {
+	0% {
+		-moz-transform: translateY(200%);
+		transform: translateY(200%);
+		opacity: 0
+	}
+ 
+	50% {
+		-moz-transform: translateY(200%);
+		transform: translateY(200%);
+		opacity: 0
+	}
+ 
+	100% {
+		-moz-transform: translateY(0%);
+		transform: translateY(0%);
+		opacity: 1
+	}
+}
+ 
+@-webkit-keyframes fadeInUp {
+	0% {
+		-webkit-transform: translateY(200%);
+		transform: translateY(200%);
+		opacity: 0
+	}
+ 
+	50% {
+		-webkit-transform: translateY(200%);
+		transform: translateY(200%);
+		opacity: 0
+	}
+ 
+	100% {
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		opacity: 1
+	}
+}
+ 
+@keyframes fadeInUp {
+	0% {
+		-moz-transform: translateY(200%);
+		-ms-transform: translateY(200%);
+		-webkit-transform: translateY(200%);
+		transform: translateY(200%);
+		opacity: 0
+	}
+ 
+	50% {
+		-moz-transform: translateY(200%);
+		-ms-transform: translateY(200%);
+		-webkit-transform: translateY(200%);
+		transform: translateY(200%);
+		opacity: 0
+	}
+ 
+	100% {
+		-moz-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		opacity: 1
+	}
+}
+
+/*首页封面动画*/
+h1.main-title, h1.fes-title,.the-feature.from_left_and_right .info,
+.header-info p,.header-info,.header-shuo,.header-shuo p,
+.focusinfo .header-tou img,.top-social img,.center-text{
+	-moz-animation: fadeInDown  2s;
+    -webkit-animation:fadeInDown  2s;
+	animation: fadeInDown  2s;
+}
+@-moz-keyframes fadeInDown {
+	0% {
+		-moz-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0
+	}
+ 
+	50% {
+		-moz-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0
+	}
+ 
+	100% {
+		-moz-transform: translateY(0%);
+		transform: translateY(0%);
+		opacity: 1
+	}
+}
+ 
+@-webkit-keyframes fadeInDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0
+	}
+ 
+	50% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0
+	}
+ 
+	100% {
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		opacity: 1
+	}
+}
+ 
+@keyframes fadeInDown {
+	0% {
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0
+	}
+ 
+	50% {
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0
+	}
+ 
+	100% {
+		-moz-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		opacity: 1
+	}
+}
+
+/*导航菜单动画*/
+.site-top ul {
+	-moz-animation: fadeInLeft  2s;
+    -webkit-animation:fadeInLeft  2s;
+	animation: fadeInLeft  2s;
+    max-width: 76vw;
+}
+@-moz-keyframes fadeInLeft {
+	0% {
+		-moz-transform: translateX(100%);
+		transform: translateX(100%);
+		opacity: 0
+	}
+ 
+	50% {
+		-moz-transform: translateX(100%);
+		transform: translateX(100%);
+		opacity: 0
+	}
+ 
+	100% {
+		-moz-transform: translateX(0%);
+		transform: translateX(0%);
+		opacity: 1
+	}
+}
+ 
+@-webkit-keyframes fadeInLeft {
+	0% {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		opacity: 0
+	}
+ 
+	50% {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		opacity: 0
+	}
+ 
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+		opacity: 1
+	}
+}
+ 
+@keyframes fadeInLeft {
+	0% {
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		opacity: 0
+	}
+ 
+	50% {
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		opacity: 0
+	}
+ 
+	100% {
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+		opacity: 1
+	}
+}
+
+/*其他*/
+
+.headertop{
+    border-radius: 0 0 15px 15px;
+}
+
+
+
+
+.author-profile .meta {
+display:none;
+}
+
+
+.post-modified-time {
+display:none;
+}
+
+
+
+@media (max-width: 860px) {
+.headertop-down {
+        display: none
+    }
+}
+
+.ai-excerpt,
+.ai-excerpt-tip {
+    display: none;
+}
+
+
+
+
+.post-list-thumb:nth-child(2n) .post-content-wrap {
+    float: left;
+    padding-left: 30px;
+    padding-right: 0;
+    text-align: right;
+    margin: 20px 10px 10px 0
+}
+.post-list-thumb:nth-child(2n) .post-thumb {
+    float: left
+}
+
+.post-list-thumb:nth-child(2n) .post-thumb a {
+    border-radius: 10px 0 0 10px
+}
+
+.pattern-center::after {
+    display:none;
+}
+.pattern-center-blank {
+    display:none;
+}
+
+.yya {
+    position: fixed;
+    -webkit-transition: all 1s ease !important;
+    transition: all 1s ease !important;
+    border-radius: 15px !important;
+}
+.site-title img {
+    margin-left: 10px;
+}
+.site-header {
+    border-radius: 15px !important;
+}
+.header-user-menu {
+    border-radius: 15px !important;
+}
+.lower li ul {
+    border-radius: 15px !important;
+}
+@media (max-width:860px) {
+.openNav .icon {
+        left: 5vw;
+    }
+.site-header {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background: 0 0;
+    position: fixed;
+    border-radius: 0 !important;
+}
+.yya {
+    border-radius: 0 !important;
+}
+}
+
+
+.header-user-menu::before {
+    display: none;
+}
+.lower li ul::before {
+    display: none;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    display: none;
+}
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+    display: none;
+}
+
+.the-feature.from_left_and_right {
+    position: relative;
+    border-radius: 15px;
+    height: 160px;
+    width: 258px;
+    margin: 6px 6px 0 6px;
+}
+
+.the-feature img {
+    height: 160px;
+    width: 258px;
+}
+
+
+
+.notice {
+    background-image:url(https://s.nmxc.ltd/sakurairo_vision/@2.6/series/announcement_bg.webp);
+    background-repeat: round;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+
+
+body{
+    background-size:auto;
+}
+#video-add{
+    background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/add.png);
+}
+@media (max-width:860px) {
+  .headertop.filter-dot::before {
+    background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/grid.png);
+  }
+}
+.headertop.filter-grid::before {
+  background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/grid.png);
+}
+
+.headertop.filter-dot::before {
+  background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/dot.gif);
+}
+.loadvideo,.video-play {
+  background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/play.png);
+}
+
+.video-pause {
+  background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/stop.png);
+}
+#loading-comments {
+background-image: url(https://s.nmxc.ltd/sakurairo_vision/@2.6/load_svg/ball.svg);
+}</style>
+<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("https://sukamoka.github.io/wp-content/uploads/2023/09/pic-5.png"); background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }</style>
+		<link rel="stylesheet" href="https://cdn2.tianli0.top/fonts/css?family=Noto+Serif|Noto+Serif+SC|Noto+Sans+SC|Dela+Gothic+One|Fira+Code&display=swap" media="all">
+	<script type="text/javascript">if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+			alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+		}</script>
+		</head>
+
+<body class="post-template-default single single-post postid-279 single-format-standard custom-background chinese-font  ">
+		<div class="scrollbar" id="bar"></div>
+	<header class="site-header no-select" role="banner">
+		<div class="site-top">
+			<div class="site-branding">
+									<div class="site-title">
+						<a href="https://sukamoka.github.io/"><img src="https://sukamoka.github.io/wp-content/uploads/2023/09/Chtholly_2.png"></a>
+					</div>
+								<!-- logo end -->
+			</div>
+<!-- .site-branding -->
+			    <div class="header-user-avatar">
+      <a href="https://sukamoka.github.io/wp-login.php?redirect_to=http%3A%2F%2Fhttps%3A%2F%2Fsukamoka.github.io%2F2023%2F09%2F07%2F%25E9%25AB%2598%25E7%25AD%2589%25E6%2595%25B0%25E5%25AD%25A6%25E5%2588%259D%25E6%25AD%25A5%3Fpage%26year%3D2023%26monthnum%3D09%26day%3D07%26name%3D%25E9%25AB%2598%25E7%25AD%2589%25E6%2595%25B0%25E5%25AD%25A6%25E5%2588%259D%25E6%25AD%25A5">
+        <img src="https://sukamoka.github.io/wp-content/uploads/2023/09/Transparent_Akkarin.jpg" width="30" height="30">
+      </a>
+      <div class="header-user-menu">
+        <div class="header-user-name no-logged">
+          <a id="login-link" href="https://sukamoka.github.io/wp-login.php?redirect_to=http%3A%2F%2Fhttps%3A%2F%2Fsukamoka.github.io%2F2023%2F09%2F07%2F%25E9%25AB%2598%25E7%25AD%2589%25E6%2595%25B0%25E5%25AD%25A6%25E5%2588%259D%25E6%25AD%25A5%3Fpage%26year%3D2023%26monthnum%3D09%26day%3D07%26name%3D%25E9%25AB%2598%25E7%25AD%2589%25E6%2595%25B0%25E5%25AD%25A6%25E5%2588%259D%25E6%25AD%25A5" data-no-pjax style="font-weight:bold;text-decoration:none">登录</a>
+        </div>
+      </div>
+    </div>
+  				<div class="searchbox js-toggle-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+						<div class="lower">				<nav><div class="menu"><ul>
+<li><a href="https://sukamoka.github.io/about/">About</a></li>
+</ul></div>
+</nav><!-- #site-navigation -->
+			</div>
+		</div>
+	</header><!-- #masthead -->
+	<div class="openNav no-select">
+		<div class="iconflat no-select" style="padding: 30px;">
+			<div class="icon"></div>
+		</div>
+	</div>
+<!-- m-nav-bar -->
+	<section id="main-container">
+					<div class="headertop filter-nothing">
+				<div id="banner_wave_1"></div>
+<div id="banner_wave_2"></div>
+<figure id="centerbg" class="centerbg">
+            <div class="focusinfo">
+                            <div class="header-tou">
+<a href="https://sukamoka.github.io/"><img loading="lazy" src="https://sukamoka.github.io/wp-content/uploads/2023/09/Chtholly_2.png"></a>
+                </div>
+                        <div class="header-container">
+                <div class="header-info">
+                    <!-- 首页一言打字效果 -->
+                                                            <span class="element">疯狂造句中......</span>
+                                        <span class="element"></span>
+                    <script type="application/json" id="typed-js-initial">{"strings":["世界一、 幸せな女の子だ"],"typeSpeed":140,"backSpeed":50,"loop":false,"showCursor":true}</script>
+                    <!-- var typed = new Typed('.element', {
+                            strings: ["给时光以生命，给岁月以文明", ], //输入内容, 支持html标签
+                            typeSpeed: 140, //打字速度
+                            backSpeed: 50, //回退速度
+                            loop: false, //是否循环
+                            loopCount: Infinity,
+                            showCursor: true //是否开启光标
+                        }); -->
+                                        <p>我永远喜欢珂朵莉</p>
+                                    </div>               
+            </div>
+
+                            <div class="top-social">
+                            <li id="bg-pre"><img src="https://s.nmxc.ltd/sakurairo_vision/@2.6/display_icon/fluent_design/pre.png" loading="lazy" alt="上一篇"></li>
+            <li class="wechat">
+<a href="#" title="WeChat"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/display_icon/fluent_design/wechat.png"></a>
+            <div class="wechatInner">
+                <img class="wechat-img" style="height: max-content;width: max-content;" loading="lazy" src="https://sukamoka.github.io/wp-content/uploads/2023/09/Chtholly_2.png" alt="WeChat">
+            </div>
+        </li>
+                <li><a href="https://space.bilibili.com/393919840" target="_blank" class="social-bili" title="bilibili"><img alt="bilibili" loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/display_icon/fluent_design/bilibili.png"></a></li>
+                    <li><a href="tencent://message/?uin=2580146678" target="_blank" class="social-qq" title="qq"><img alt="qq" loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/display_icon/fluent_design/qq.png"></a></li>
+                    <li><a href="https://music.163.com/#/user/home?id=1429476838" target="_blank" class="social-wangyiyun" title="cloudmusic"><img alt="cloudmusic" loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/display_icon/fluent_design/ncm.png"></a></li>
+                    <li><a href="https://github.com/czy430/" target="_blank" class="social-github" title="github"><img alt="github" loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/display_icon/fluent_design/github.png"></a></li>
+                    <li><a href="https://osu.ppy.sh/users/22633760" target="_blank" class="social-wangyiyun" title="OSU!"><img alt="OSU!" loading="lazy" src="https://sukamoka.github.io/wp-content/uploads/2023/09/th.png"></a></li>
+                <li id="bg-next"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/display_icon/fluent_design/next.png" alt="下一篇"></li>
+                    </div>
+                    </div>
+    </figure>
+<!-- 首页下拉箭头 -->
+<div class="headertop-down" onclick="headertop_down()"><span><svg t="1682342753354" class="homepage-downicon" viewbox="0 0 1843 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="21355" width="80px" height="80px"><path d="M1221.06136021 284.43250057a100.69380037 100.69380037 0 0 1 130.90169466 153.0543795l-352.4275638 302.08090944a100.69380037 100.69380037 0 0 1-130.90169467 0L516.20574044 437.48688007A100.69380037 100.69380037 0 0 1 647.10792676 284.43250057L934.08439763 530.52766665l286.97696258-246.09516608z" fill="rgba(255,255,255,0.8)" p-id="21356"></path></svg></span></div>
+			</div>
+				<div id="page" class="site wrapper">
+			<div class="blank"></div>			<div id="content" class="site-content">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+		
+<div class="has-toc have-toc"></div>
+
+<article id="post-279" class="post-279 post type-post status-publish format-standard hentry category-4">
+		<header class="entry-header">
+		<h1 class="entry-title">高等数学初步</h1>
+		<p class="entry-census">发布于 2023-09-07&nbsp;&nbsp;375 次阅读 </p>
+		<hr>
+	</header><!-- .entry-header -->
+		<!--<div class="toc-entry-content">--><!-- 套嵌目录使用（主要为了支援评论）-->
+		<div class="entry-content">
+		
+<h2 class="wp-block-heading">-1. 集合</h2>
+
+
+
+<p><strong>全集：</strong>研究特定问题时涉及的全部元素的集合（讲究语境）；</p>
+
+
+
+<p><strong>完备集：</strong>全集 \( X \) 的 \( n \) 个子集 \( A_1 ， A_2 ， ... ， A_n \) 满足 \( A_1 \cup A_2 \cup ... \cup A_n = X \) 且 \( A_i \cap A_j = \varnothing \ (i \ne j) \) ，则称这些集合为 \( X \) 的完备集，也称它们为 \( X \) 的一个分割；</p>
+
+
+
+<p><strong>直积（笛卡尔积）：</strong>\( A \times B = \{(x,y) |x \in A , y \in B \} \) ；</p>
+
+
+
+<p>我们容易发现，通过直积的运算方式，一维的元素被拓展至二维，同时，也可以通过相应方式将元素拓展至更高维度，并且容易知道直积满足结合律，但并不满足分配律；</p>
+
+
+
+<p>特别地，两个实数集的直积是平面直角坐标系：</p>
+
+
+
+<p>$$ R^2 = R \times R = \{(x,y)| x \in R, y \in R\} $$</p>
+
+
+
+<p><strong>邻域：</strong>以点 \( a \) 为中心的任何开区间，记作 \( U(a) = (a - \delta , a + \delta) ，\delta \in R^* \) ，其中 \( a \) 被称作邻域中心， \( \delta \) 被称作邻域半径；</p>
+
+
+
+<p><strong>左邻域：</strong>\( (a - \delta, a) \) ；</p>
+
+
+
+<p><strong>右邻域：</strong>\( (a, a + \delta) \) ；</p>
+
+
+
+<p><strong>去心邻域：</strong>\( \mathring{U} (a) = (a - \delta, a) \cap (a, a + \delta) \) ；</p>
+
+
+
+<p><strong>无穷邻域：</strong>\( (a - \infty, a) \cap (a, a + \infty) \) ；</p>
+
+
+
+<p><strong>左无穷邻域：</strong>\( (a - \infty, a) \) ；</p>
+
+
+
+<p><strong>右无穷邻域：</strong>\( (a, a + \infty) \) ；</p>
+
+
+
+<h2 class="wp-block-heading">0. 前置芝士</h2>
+
+
+
+<p>我们知道，高等数学研究的范围是实数域，而我们必须知道，实数集 \( R \) 具有有序性，连续性，完备性三大性质。其中，连续性公理是极限理论的基石，而极限理论则是微积分的基石，由此可见连续性公理的重要性。为了介绍它，我们首先给出上界与上确界的定义：</p>
+
+
+
+<p>若 \( \forall x \in E ， \exists M \in R \) ，使得 \( M \geq E \) ，则称 \( M \) 为 \( E \) 的<strong>上界</strong>，且称 \( E \) 是有上界的集合；</p>
+
+
+
+<p>特别的，我们称 \( M \) 的最小值为 \( E \) 的<strong>上确界</strong>；</p>
+
+
+
+<p>下界与下确界的定义可参考得出。由此，我们可以给出连续性公理的内容：</p>
+
+
+
+<p><strong>连续性公理：</strong>一个非空的有上界的实数集，必有上确界。</p>
+
+
+
+<h2 class="wp-block-heading">1. 映射</h2>
+
+
+
+<p><strong>定义</strong> 设 \( X ， Y \) 是两个非空集合，如果存在一个法则 \( f \) ，使得对 \( X \) 中每个元素 \( x \) ，按法则 \( f \) ，在 \( Y \) 中有唯一确定的元素 \( y \) 与之对应，那么称 \( f \) 为从 \( X \) 到 \( Y \) 的<strong>映射</strong>，记作</p>
+
+
+
+<p>$$ f : x \rightarrow y \ ，$$</p>
+
+
+
+<p>其中 \( y \) 称为元素 \( x \) （在映射 \( f \) 下）的<strong>像</strong>，并记作 \( f(x) \) ，即</p>
+
+
+
+<p>$$ y = f(x) \ ， $$</p>
+
+
+
+<p>而元素 \( x \) 称为元素 \( y \) （在映射 \( f \) 下）的一个<strong>原像</strong>；集合 \( X \) 称为映射 \( f \) 的<strong>定义域</strong>，记作 \( D_f \) ，即 \( D_f = X \) ；\( X \) 中所有元素的像所组成的集合称为映射 \( f \) 的<strong>值域</strong>，记作 \( R_f \) 或 \( f(X) \) ，即</p>
+
+
+
+<p>$$ R_f = f(X) = \{ f(x) | x \in X \} \ ， $$</p>
+
+
+
+<p>且易知 \( R(f) \in Y \) 。</p>
+
+
+
+<p>特别地，若 \( R_f = Y \) ，则称 \( f \) 为 \( X \) 到 \( Y \) 上的映射或<strong>满射</strong>；若对于任意 \( x_i \ne x_j \) ，均有 \( f(x_i) \ne f(x_j) \) ，则称 \( f \) 为 \( X \) 到 \( Y \) 的<strong>单射</strong>；若同时满足单射和满射，则称则称 \( f \) 为<strong>一一映射</strong>（或<strong>双射</strong>）。</p>
+
+
+
+<p><strong>逆映射：</strong>若存在从 \( X \) 到 \( Y \) 的单射 \( f \) ，那么可以定义一个从 \( R_f \) 到 \( X \) 的新映射 \( g \) ，即：</p>
+
+
+
+<p>$$ g : R_f \rightarrow X ， $$</p>
+
+
+
+<p>对每个 \( y \in R_f \) ，规定 \( g(y) = x \) ，这 \( x \) ，这 \( x \) 满足 \( f(x) = y \) 。这个映射 \( g \) 被称为 \( f \) 的逆映射，记作 \( f^{-1} \) ，其定义域 \( D_{f^{-1}} = R_f \) ，值域 \( R_{f^{-1}} = X \) 。</p>
+
+
+
+<p><strong>复合映射：</strong>设有两个映射</p>
+
+
+
+<p>$$ g : X \rightarrow Y_1 ， f : Y_2 \rightarrow Z ， $$</p>
+
+
+
+<p>其中 \( Y_1 \subset Y_2 \) ，则有映射 \( g \) 和 \( f \) 可以定出一个从 \( X \) 到 \( Z \) 的对应法则，它将每个 \( x \in X \) 映射成 \( f[g(x)] \in Z \) 。显然，这个对应法则确定了一个从 \( X \) 到 \( Z \) 的映射，这个映射称为映射 \( g \) 和 \( f \) 构成的复合映射，记作 \( f \circ g \) ，即</p>
+
+
+
+<p>$$ f \circ g : X \rightarrow Z ，(f \circ g) (x) = f[g(x)] ，x \in X . $$</p>
+
+
+
+<p>注意只有当 \( R_g \subset D_f \) 时， \( f \circ g \) 才有意义。</p>
+
+
+
+<p>一般地， \( (f \circ g) \) 与 \( (g \circ f) \) 不一定相等，也不一定都有意义。</p>
+
+
+
+<p>特别地， \( (f \circ f^{-1}) (x) = (f^{-1} \circ f) (x) = x \) 。</p>
+
+
+
+<h2 class="wp-block-heading">2. 函数</h2>
+
+
+
+<p><strong>定义</strong> 设数集 \( D \subset R \) ，则称映射 \( f : D \rightarrow R \) 为定义在 \( D \) 上的函数，通常记为</p>
+
+
+
+<p>$$ y = f(x) ， x \in D ， $$</p>
+
+
+
+<p>其中 \( x \) 称为自变量， \( y \) 称为因变量， \( D \) 称为定义域，记作 \( D_f \) ，即 \( D_f = D \) ，并且我们称函数值 \( f(x) \) 的全体所构成的集合为函数 \( f \) 的值域，记作 \( f(D) \) 或 \( R_f \) ，即</p>
+
+
+
+<p>$$ R_f = f(D) = \{y | y = f(x) ，x \in D \} 。 $$</p>
+
+
+
+<p>此外，定义域分为自然定义域与实际定义域，前者是指使算式有意义的实数集合，后者则是在前者的基础上，加入了所研究实际问题的限制，根据实际背景中变量的实际意义确定。</p>
+
+
+
+<p><strong>反函数：</strong>设函数 \( f : D \rightarrow f(D) \) 是单射，则它存在逆映射 \( f ^ {-1} : f(D) \rightarrow D \) ，称此映射 \( f ^ {-1} \) 为函数 \( f \) 的<strong>反函数</strong>，而一般称原来的函数 \( f \) 为<strong>直接函数</strong>，它们的图像关于直线 \( y = x \) 对称。</p>
+
+
+
+<p><strong>复合函数：</strong>设函数 \( y= f(u) \) 的定义域为 \( D_f \) ，函数 \( u = g(x) \) 的定义域为 \( D_g \) ，且其值域 \( R_g \subset D_f \) ，则由下式确定的函数</p>
+
+
+
+<p>$$ y = f[g(x)] = (f \circ g) (x) ， x \in D_g $$</p>
+
+
+
+<p>称为由函数 \( u = g(x) \) 与函数 \( y = f(u) \) 构成的<strong>复合函数</strong>，它的定义域为 \( D_g \) ，变量 \( u \) 称为<strong>中间变量</strong>。</p>
+
+
+
+<h3 class="wp-block-heading">性质</h3>
+
+
+
+<ol class="wp-block-list">
+<li>
+<strong>有界性</strong> 函数在某区间内有界的充要条件是函数在该区间内既有上界也有下界（具体定义见前文）；</li>
+
+
+
+<li>
+<strong>单调性</strong> 基本同初等数学；</li>
+
+
+
+<li>
+<strong>奇偶性</strong> 基本同初等数学；</li>
+
+
+
+<li>
+<strong>周期性</strong> 基本同初等数学，但需注意周期函数不一定有最小正周期，如狄利克雷函数。</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">运算</h3>
+
+
+
+<p>设函数 \( f(x) \) ， \( g(x) \) 的定义域依次为 \( D_f \) ， \( D_g \) ， \( D = D_f \cap D_g \ne \varnothing \) ，则我们可以定义这些函数的下列运算：</p>
+
+
+
+<p>和（差）： \( (f \pm g)(x) = f(x)  \pm g(x) ， x \in D \) ；</p>
+
+
+
+<p>积： \( (f · g)(x) = f(x)  · g(x) ， x \in D \) ；</p>
+
+
+
+<p>商： \( \Big(\dfrac{f}{g}\Big)(x) = \dfrac{f(x)}{g(x)} ， x \in D \backslash \{x | g(x) = 0 ， x \in D \} \) 。</p>
+
+
+
+<h3 class="wp-block-heading">初等函数</h3>
+
+
+
+<p><strong>基本初等函数：</strong>共五类，包括幂函数、指数函数、对数函数、三角函数和反三角函数。</p>
+
+
+
+<p>常数和基本初等函数经过有限次的四则运算和有限次的函数复合步骤所构成并可用一个式子表示的函数，称为<strong>初等函数</strong>。</p>
+
+
+
+<p>初等函数包括<strong>代数函数</strong>和<strong>超越函数</strong>，代数函数指能由多项式函数经过有限次代数运算得到的函数，超越函数则相反，此外，由多项式函数作比得到的函数为<strong>有理函数</strong>。</p>
+
+
+
+<p>在初等函数中有一类函数具有类似三角函数的性质，我们称之为双曲函数，主要包括：</p>
+
+
+
+<p>双曲正弦： \( \operatorname{sh}\ x = \sinh\ x =  \dfrac{e ^ x - e ^ {-x}}{2} \) ，它是奇函数；</p>
+
+
+
+<p>双曲余弦： \( \operatorname{ch}\ x = \cosh\ x =  \dfrac{e ^ x + e ^ {-x}}{2} \) ，它是偶函数；</p>
+
+
+
+<p>双曲正切： \( \operatorname{th}\ x = \tanh\ x =  \dfrac{e ^ x - e ^ {-x}}{e ^ x + e ^ {-x}} \) ，它是奇函数；</p>
+
+
+
+<p>双曲余切： \( \tanh\ x = \dfrac{e ^ x + e ^ {-x}}{e ^ x - e ^ {-x}} ， \)</p>
+
+
+
+<p>根据定义，可知它们满足以下性质</p>
+
+
+
+<p>$$ \operatorname{sh}(x + y) = \operatorname{sh}\ x \operatorname{ch}\ y + \operatorname{ch}\ x \operatorname{sh}\ y \ ， $$</p>
+
+
+
+<p>$$ \operatorname{sh}(x - y) = \operatorname{sh}\ x \operatorname{ch}\ y - \operatorname{ch}\ x \operatorname{sh}\ y \ ， $$</p>
+
+
+
+<p>$$ \operatorname{ch}(x + y) = \operatorname{ch}\ x \operatorname{ch}\ y - \operatorname{sh}\ x \operatorname{sh}\ y \ ， $$</p>
+
+
+
+<p>$$ \operatorname{ch}(x + y) = \operatorname{ch}\ x \operatorname{ch}\ y + \operatorname{sh}\ x \operatorname{sh}\ y \ ， $$</p>
+
+
+
+<p>$$ \operatorname{ch} ^ 2 x - \operatorname{sh} ^ 2 x = 1 \ ， $$</p>
+
+
+
+<p>$$ 1 - \operatorname{th} ^ 2 x = \operatorname{sech} ^ 2 x \ ， $$</p>
+
+
+
+<p>$$ \operatorname{sh}\ 2x = 2 \operatorname{sh}\ x \operatorname{ch}\ x \ ， $$</p>
+
+
+
+<p>$$ \operatorname{ch}\ 2x = \operatorname{ch} ^ 2 x + \operatorname{sh} ^ 2 x \ 。 $$</p>
+
+
+
+<p>它们的反函数被称作反双曲函数，例如：</p>
+
+
+
+<p>反双曲正弦： \( y = \operatorname{arsh}\ x =  \ln(x + \sqrt{x ^ 2 - 1}) \) ，它是奇函数；</p>
+
+
+
+<p>反双曲余弦： \( y = \operatorname{arch}\ x =  \ln(x + \sqrt{x ^ 2 - 1}) \) ；</p>
+
+
+
+<p>反双曲正切： \( y = \operatorname{arth}\ x =  \dfrac{1}{2} \ln \dfrac{1 + x}{1 - x} \) ，它是奇函数。</p>
+
+
+
+<h2 class="wp-block-heading">3. 数列的极限</h2>
+
+
+
+<h3 class="wp-block-heading">\( \epsilon - N \) 定义：</h3>
+
+
+
+<p>\( \lim \limits_{ n \to \infty} a_n = a \Leftrightarrow \forall \epsilon &gt; 0 ， \exists N \in Z ^ * \) ，使得对于 \( n &gt; N \) ，<strong>恒</strong>有 \( | a_n - a | &lt; \epsilon \) <strong>成立</strong>。</p>
+
+
+
+<p>注意：不能只是单纯的无穷多项成立，必须是恒成立！</p>
+
+
+
+<h3 class="wp-block-heading">性质</h3>
+
+
+
+<p><strong>性质 1（唯一性）</strong> 设数列 \( \{a_n\} \) 存在极限，则该极限唯一，即：</p>
+
+
+
+<p>$$ \lim \limits_{n \to \infty} a_n =a \land \lim \limits_{n \to \infty} a_n = b \Rightarrow a = b .$$</p>
+
+
+
+<p><strong>性质 2（有界性）</strong> 若数列 \( \{a_n\} \) 存在极限，则该数列一定有界，即 \( \exists M &gt;0 \) ，使得 \( |a_n| \leq M \ (n = 1 \ , 2 \ , \ ... \ , n , \ ... ) \) 。</p>
+
+
+
+<p><strong>性质 3（保号性）</strong> 若数列 \( \{a_n\} \) 存在极限，且 \( a &gt; 0 \) ，则存在正整数 \( N \) ，当 \( n &gt; N \) 时有 \( a_n &gt; 0 \) 恒成立（\( a &lt; 0 \) 时有类似结论）。</p>
+
+
+
+<p><strong>推论 1</strong> 若数列 \( \{a_n\} \) 存在极限，且从第 \( N \) 项起有 \( a_n \leq 0 \) ，则 \( a \leq 0 \) （\(a_n &lt; 0 \) 时有类似结论）。</p>
+
+
+
+<p><strong>性质 4</strong> 设 \( \lim \limits_{n \to \infty} a_n =a \) ，且 \( a \ne 0 \) ，则存在 \( N \in Z ^ * \) ，当 \( n \ge N \) 时，恒有 \( |a_n| \ge \dfrac{|a|}{2} \) 。</p>
+
+
+
+<p><strong>ATTENTION!</strong></p>
+
+
+
+<ol class="wp-block-list">
+<li>\( \epsilon \) 规定范围可任意给定，如 \( \epsilon \in (0,1) \) ，但是可小不可大；</li>
+
+
+
+<li>\( N \) 与 \( \epsilon \) 有关，通常写作 \( N = \phi(\epsilon) \) ，但是可大不可小；</li>
+
+
+
+<li>\( |a_n - a| &lt; \epsilon \) 可适当放大求解。</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">极限的四则运算</h3>
+
+
+
+<p>已知 \( \{a_n\} ， \{b_n\} \) 均为收敛数列， \( c \) 为常数，则有</p>
+
+
+
+<ol class="wp-block-list">
+<li>\( \lim \limits_{n \to \infty} (a_n \pm b_n) = \lim \limits_{n \to \infty} a_n \pm \lim \limits_{n \to \infty} b_n \) ；</li>
+
+
+
+<li>\( \lim \limits_{n \to \infty} (a_n \times b_n) = \lim \limits_{n \to \infty} a_n \times \lim \limits_{n \to \infty} b_n \) ；</li>
+
+
+
+<li>\( \lim \limits_{n \to \infty} \dfrac{1}{a_n} = \dfrac{1}{\lim \limits_{n \to \infty} a_n} \) ，其中 \( \lim \limits_{n \to \infty} a_n \ne 0 \) ；</li>
+
+
+
+<li>\( \lim \limits_{n \to \infty} \dfrac{a_n}{b_n} = \dfrac{\lim \limits_{n \to \infty} a_n}{\lim \limits_{n \to \infty} b_n} \) ，其中 \( \lim \limits_{n \to \infty} b_n \ne 0 \) ；</li>
+
+
+
+<li>\( \lim \limits_{n \to \infty} c \times a_n = c \times \lim \limits_{n \to \infty} a_n \) ；</li>
+
+
+
+<li>\( \lim \limits_{n \to \infty} a_n^p = [\lim \limits_{n \to \infty} a_n]^p ， p \in N ^ * \) .</li>
+</ol>
+
+
+
+<p><strong>注意：</strong>和差积商的极限存在不代表原数列极限一定存在，要用的话需要证明其存在！</p>
+
+
+
+<h3 class="wp-block-heading">子数列</h3>
+
+
+
+<p><strong>定义</strong> 从无穷数列 \{ a_n \} 中选取无穷多项，并按原来的先后顺序组成新的数列，并称新的数列为原数列的子数列，记为 \( \{ a_{n_k} \} ： a_{n_1} ， a_{n_2} ， ... ， a_{n_k} ，... \)</p>
+
+
+
+<p><strong>定理 1</strong> 若数列 \( a_n \) 收敛，则其任何子数列 \( a_{n_k} \) 也收敛，且 \( \lim \limits_{n \to \infty} a_{n_k} = \lim \limits_{n \to \infty} a_n \) .</p>
+
+
+
+<p><strong>定理 2 （拉链定理）</strong> 数列 \( \{ a_n \} \) 收敛的充要条件时它的两个子数列 \( \{ a_{2 n  - 1} \} \) 和 \( \{ a_{2 n} \} \) 收敛且极限相同。</p>
+
+
+
+<p><strong>定理 3 （夹逼定理）</strong> 设 \( x_n \le a_n \le y_n \big( n = 1 ， 2 ， ... ， n ， ... \big) \) ，若 \( \lim \limits_{n \to \infty} x_n =\lim \limits_{n \to \infty} y_n = a \) ，则 \( \lim \limits_{n \to \infty} a_n = a \) 。</p>
+
+
+
+<h3 class="wp-block-heading">单调有界准则</h3>
+
+
+
+<p>设数列 \( \{ a_n \} \单调递增且有上界，即</p>
+
+
+
+<p>$$ a_1 \leq a_2 \leq ... \leq a_{n - 1} \leq a_n \leq ... $$</p>
+
+
+
+<p>且存在常数 \( M \) 使得 \( a_n \leq M \big( n = 1 ， 2 ， ... \big) \) ，则数列 \( \{ a_n \} \) 存在极限。</p>
+
+
+
+<p>（单调递减且有下界同理呐~）</p>
+
+
+
+<h2 class="wp-block-heading">4. 函数的极限</h2>
+
+
+
+<p>自变量 \( x \) 变化过程的六种形式：</p>
+
+
+
+<ol class="wp-block-list">
+<li>\( x \to -\infty \)</li>
+
+
+
+<li>\( x \to +\infty \)</li>
+
+
+
+<li>\( x \to \infty \)</li>
+
+
+
+<li>\( x \to x_0^- \)</li>
+
+
+
+<li>\( x \to x_0^+ \)</li>
+
+
+
+<li>\( x \to x_0 \)</li>
+</ol>
+
+
+
+<p>注意：第 \( 3 \) 种形式和第 \( 6 \) 种形式都是二合一！</p>
+
+
+
+<h3 class="wp-block-heading">\( x \to +\infty \) 时函数极限的定义：</h3>
+
+
+
+<p>设函数 \( f(x) \) 在 \( x \) 大于某一正数时有定义，若存在常数 \( A \) ，使得对任意给定的正数 \( \epsilon \) ，存在正数 \( X \) ，当 \( x &gt; X \) ，时，恒有</p>
+
+
+
+<p>$$ |f(x) - A| = \epsilon ， $$</p>
+
+
+
+<p>则称函数 \( f(x) \) 当自变量 \( x \) 趋于无穷大(即 \( x \to +\infty \) )时存在极限 \( A \) ，记为 \( \lim \limits_{x \to +\infty} f(x) = A \) 或 \( f(x) \to A \big( x \to +\infty \big) \) 。</p>
+
+
+
+<h4 class="wp-block-heading">定义简洁形式：</h4>
+
+
+
+<p>$$ \lim \limits_{x \to +\infty} f(x) = A \Leftrightarrow \forall \epsilon &gt; 0 ， \exists X &gt; 0 ， 当 x &gt; X 时，恒有 |f(x) - A| &lt; \epsilon \ . $$</p>
+
+
+
+<p>（其他各种情况类似定义即可）</p>
+
+
+
+<p>（注意单侧极限与双侧极限的关系：\( \lim \limits_{x \to \infty} f(x) = A \Leftrightarrow \lim \limits_{x \to +\infty} f(x) = \lim \limits_{x \to -\infty} f(x) = A \) ）</p>
+
+
+
+<h3 class="wp-block-heading">\( x \to x_0 \) 时函数极限的定义：</h3>
+
+
+
+<p>设函数 \( f(x) \) 在 \( x_) \) 的某去心邻域 \( U_0 (x_0, r) \)有定义，若存在常数 \( A \) ，使得对任意给定的正数 \( \epsilon \) ，存在正数 \( \delta &lt; r \) ，当 \( 0 &lt; |x - x_0| &lt; \delta \) ，时，恒有</p>
+
+
+
+<p>$$ |f(x) - A| = \epsilon ， $$</p>
+
+
+
+<p>则称函数 \( f(x) \) 当自变量 \( x \) 趋于 \( x_0 \) (即 \( x \to x_0 \) )时存在极限 \( A \) ，记为 \( \lim \limits_{x \to x_0} f(x) = A \) 或 \( f(x) \to A \big( x \to x_0 \big) \) 。</p>
+
+
+
+<h4 class="wp-block-heading">定义简洁形式：</h4>
+
+
+
+<p>$$ \lim \limits_{x \to x_0} f(x) = A \Leftrightarrow \forall \epsilon &gt; 0 ， \exists \delta &gt; 0 ， 当 0 &lt; |x - x_0| &lt; \delta 时，恒有 |f(x) - A| &lt; \epsilon \ . $$</p>
+
+
+
+<p>（其他各种情况类似定义即可）</p>
+
+
+
+<p>（注意单侧极限与双侧极限的关系：\( \lim \limits_{x \to x_0} f(x) = A \Leftrightarrow \lim \limits_{x \to +x_0} f(x) = \lim \limits_{x \to -x_0} f(x) = A \) ）</p>
+
+
+
+<h3 class="wp-block-heading">函数极限的性质（类似数列极限的性质）</h3>
+
+
+
+<p><strong>定理 1（唯一性）</strong> 设 \( \lim \limits_{x \to \infty} f(x) = A \) ，则极限值 \( A \) 唯一；</p>
+
+
+
+<p><strong>定理 2（局部有界性）</strong> 设 \( \lim \limits_{x \to \infty} f(x) = A \) ，则存在 \( \delta &gt; 0 \) ，使 \( f(x) \) 在去心邻域 \( 0 &lt; |x - x_0| &lt; \delta \) 中有界；</p>
+
+
+
+<p><strong>定理 3（局部保号性）</strong> 设 \( \lim \limits_{x \to \infty} f(x) = A \) ，且 \( A &gt; 0 \) ，则存在 \( \delta &gt; 0 \) ，使当 \( 0 &lt; |x - x_0| &lt; \delta \) 时， \( f(x) &gt; 0 \) ；</p>
+
+
+
+<p>（也可证明 \( f(x) &gt; \dfrac{A}{2} \) ）</p>
+
+
+
+<p>（ \( A &lt; 0\) 时结论类似）</p>
+
+
+
+<h3 class="wp-block-heading">函数的四则运算与复合运算的极限</h3>
+
+
+
+<h4 class="wp-block-heading">四则运算的极限</h4>
+
+
+
+<p>基本类似与数列四则运算的极限，但需要注意参与运算的函数均需有相同变化趋势；</p>
+
+
+
+<h4 class="wp-block-heading">复合函数的极限</h4>
+
+
+
+<p>设 \( u = \phi(x) \) 在 \( x_0 \) 的去心邻域 \( U_0(x_0) \) 内有定义， \( \phi(x) \ne u_0 \) ，且 \( \lim \limits_{x \to x_0} \phi(x) = u_0 \) ；又 \( y = f(u) \) 在 \( u_0 \) 的去心邻域 \( U_0(u_0) \) 内有定义， \( \lim \limits_{u \to u_0} f(u) = A \) ，且极限 \( \lim \limits_{x \to x_0} f[\phi(x)] \) 存在，且</p>
+
+
+
+<p>$$ \lim \limits_{x \to x_0} f[\phi(x)] = \lim \limits_{u \to u_0} f(u) = A \ . $$</p>
+
+
+
+<h4 class="wp-block-heading">夹逼定理（第二弹）</h4>
+
+
+
+<p>设 \( f(x) \) ， \( \phi(x) \) ， \( \Phi(x) \)  在 \( x_0 \) 去心邻域 \( U_0(x_0) \) 中满足 \( \phi(x) \le f(x) \le \Phi(x) \) ，且 \( \lim \limits_{x \to x_0} \phi(x) \) 和 \( \lim \limits_{x \to x_0} \Phi(x) \) 存在且相等，那么 \( \lim \limits_{x \to x_0} f(x) \) 存在且与 \( \lim \limits_{x \to x_0} \phi(x) \) 和 \( \lim \limits_{x \to x_0} \Phi(x) \)  相等。</p>
+
+
+
+<h3 class="wp-block-heading">函数极限与数列极限的关系</h3>
+
+
+
+<p>设 \( \lim \limits_{x \to +\infty} f(x) = A \) ，则对于任何满足 \( x_n \to +\infty \big( n \to \infty \big) \) 的数列 \( \{ x_n \} \) ，均有 \( \lim \limits_{n \to \infty} f(x_n) = A \) 。</p>
+
+
+
+<p>设 \( \lim \limits_{x \to x_0} f(x) = A \) ，则对于任何满足 \( x_n \to x_0 \big( n \to \infty \big) \) 且 \( x_n \ne x_0 \big( n \in N ^ * \big) \) 的数列 \( \{ x_n \} \) ，均有 \( \lim \limits_{n \to \infty} f(x_n) = A \) 。</p>
+
+
+
+<h4 class="wp-block-heading">海涅定理（极限的归一性）</h4>
+
+
+
+<p>$$ \lim \limits_{x \to x_0} f(x) = A \Leftrightarrow \forall{x_n} : x_n \ne x_0 ， f(x_n) 有定义且 x_n \to x_0 \big( n \to \infty \big) ，有 \lim \limits_{n \to \infty} f(x_n) = A \ . $$</p>
+
+
+
+<p>（求数列极限可以转化为求函数极限的问题）</p>
+
+
+
+<h2 class="wp-block-heading">5. 无穷小与无穷大</h2>
+
+
+
+<h3 class="wp-block-heading">无穷小</h3>
+
+
+
+<p><strong>定义</strong> 如果函数 \( f(x) \) 当 \( x \to x_0 \) （或 \( x \to \infty \) ）时的极限为零，那么称函数 \( f(x) \) 为当 \( x \to x_0 \) （或 \( x \to \infty \) ）时的无穷小。</p>
+
+
+
+<p>特别地，以零为极限的数列 \( \{ x_n \} \) 称为 \( n \to \infty \) 的无穷小。</p>
+
+
+
+<p><strong>定理 1</strong> 在自变量的同一变化过程  \( x \to x_0 \) （或 \( x \to \infty \) 中，函数 \( f(x) \) 具有极限 \( A \) 的充分必要条件是 \( f(x) = A + \alpha \) ，其中 \( \alpha \) 为无穷小。</p>
+
+
+
+<p><strong>定理 2</strong> 两个无穷小之和为无穷小。</p>
+
+
+
+<p><strong>定理 3</strong> 有界函数与无穷小的乘积是无穷小。</p>
+
+
+
+<p><strong>推论 1</strong> 常数与无穷小的乘积是无穷小。</p>
+
+
+
+<p><strong>推论 2</strong> 有限个无穷小之和为是无穷小。</p>
+
+
+
+<p><strong>推论 3</strong> 有限个无穷小的乘积是无穷小。</p>
+
+
+
+<h3 class="wp-block-heading">无穷大</h3>
+
+
+
+<p><strong>定义</strong> 设函数 \( f(x) \) 在 \( x_0 \) 的某一去心邻域内有定义（或 \( |x| \) 大于某一正数时有定义），如果对于任意给定的正数 \( M \) （不论它多么大），总存在正数 \( \delta \) （或正数 \( X \) ），只要 \( x \) 适合不等式 \( 0 &lt; | x - x_0 | &lt; \delta \) （或 \( |x| &gt; X \) ），对应的函数值 \( f(x) \) 总满足不等式</p>
+
+
+
+<p>$$ |f(x)| &gt; M \ ，$$</p>
+
+
+
+<p>那么称函数 \( f(x) \) 是当 \( x \to x_0 \) （或 \( x \to \infty \) ）时的无穷大。</p>
+
+
+
+<p><strong>定理 4</strong> 在自变量的同一变化过程中，如果 \( f(x) \) 为无穷大，那么 \( \dfrac{1}{f(x)} \) 为无穷小；反之，如果 \( f(x) \) 为无穷小，且 \( f(x) \ne 0 \)，那么 \( \dfrac{1}{f(x)} \) 为无穷大。（即 \( \infty = \dfrac{1}{0} \) ）</p>
+
+
+
+<p><strong>定理 5</strong> 有界函数与无穷大的和为无穷大。</p>
+
+
+
+<p><strong>定理 6</strong> 若 \( lim f(x) = \infty \) ， \( \lim g(x) = B \ne 0 \) ，则 \( lim f(x) g(x) = \infty \) 。</p>
+
+
+
+<h3 class="wp-block-heading">无穷小的比较</h3>
+
+
+
+<p><strong>定义 4</strong> 设 \( f(x) \) ， \( g(x) \) 是同一变化过程中的无穷小，且 \( g(x) \ne 0 \) ，</p>
+
+
+
+<ol class="wp-block-list">
+<li>如果 \( \lim \dfrac{f(x)}{g(x)} = 0 \) ，那么就说 \( f(x) \) 是比 \( g(x) \) 高阶的无穷小，记作 \( g(x) = o(f(x)) \) ；</li>
+
+
+
+<li>如果 \( \lim \dfrac{f(x)}{g(x)} = \infty \) ，那么就说 \( f(x) \) 是比 \( g(x) \) 低阶的无穷小；</li>
+
+
+
+<li>如果 \( \lim \dfrac{f(x)}{g(x)} = C \ne 0 \) ，那么就说 \( f(x) \) 与 \( g(x) \) 是同阶无穷小；</li>
+
+
+
+<li>如果 \( \lim \dfrac{f(x)}{g(x)^k} = C \ne 0 \) ，那么就说 \( f(x) \) 是关于 \( g(x) \) 的 \( k \)阶无穷小；</li>
+
+
+
+<li>如果 \( \lim \dfrac{f(x)}{g(x)} = 1 \) ，那么就说 \( f(x) \) 与 \( g(x) \) 是等价无穷小，记作 \( f(x) ~ g(x) \) 。</li>
+</ol>
+
+
+
+<p><strong>定理 7</strong> \( f(x) \) 和 \( g(x) \) 是等价无穷小的充分必要条件为</p>
+
+
+
+<p>$$f(x) = g(x) + o(f(x)) \ 。 $$</p>
+
+
+
+<p><strong>定理 8</strong> 设 \( \alpha \sim \tilde{\alpha} \) ，\( \beta \sim \tilde{\beta} \) ，且 \( \lim \dfrac{\tilde{\beta}}{\tilde{\alpha}} \) ，则</p>
+
+
+
+<p>$$ \lim \dfrac{\alpha}{\beta} = \lim \dfrac{\tilde{\alpha}}{\tilde{\beta}} \ . $$</p>
+
+
+
+<h3 class="wp-block-heading">极限计算规则的简化</h3>
+
+
+
+<ol class="wp-block-list">
+<li>
+<strong>和差取大</strong>：若 \( \beta = o(\alpha) \) ，则 \( \alpha \pm \beta ~ \alpha \) ；</li>
+
+
+
+<li>
+<strong>和差代替</strong>：\( \alpha \sim \tilde{\alpha} \) ，\( \beta \sim \tilde{\beta} \) 且 \( \alpha \) 与 \( \beta \) 不等价，则 \( \lim \dfrac{\tilde{\beta}}{\tilde{\alpha}} = \lim \dfrac{\beta}{\alpha} \) ；</li>
+
+
+
+<li>
+<strong>因式代替</strong>：若 \( \alpha \sim \beta \) ，\( \lim \phi(x) \) 存在，则 \( lim \alpha \phi(x) = \lim \beta \phi(x) \) 。</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">渐近线</h3>
+
+
+
+<p><strong>水平渐近线</strong> \( \Leftrightarrow \lim \limits_{x \to \infty} f(x) \) 存在；</p>
+
+
+
+<p><strong>铅直渐近线</strong> \( \Leftrightarrow \dfrac{C}{0} \) 或 \( \dfrac{\alpha}{o(\alpha)} \) ；</p>
+
+
+
+<p><strong>斜渐近线</strong> \( \Leftrightarrow \lim \limits_{x \to \infty} \dfrac{f(x)}{x} \) 存在。</p>
+
+
+
+<h2 class="wp-block-heading">函数的连续性与间断点</h2>
+
+
+
+<h3 class="wp-block-heading">增量</h3>
+
+
+
+<p>设变量 \( u \) 从它的一个初值 \( u_1 \) 变到终值 \( u_2 \) ，终值与初值的差 \( u_2 - u_1 \) 就叫做变量 \( u \) 的<strong>增量</strong>，记作 \( \Delta u \) ，即</p>
+
+
+
+<p>$$ \Delta u = u_2 - u_1 \ . $$</p>
+
+
+
+<p>记任意函数为 \( y = f(x) \) ，则 \( \Delta y = f(x_0 + \Delta x)  - f(x_0) \) 。</p>
+
+
+
+<h3 class="wp-block-heading">连续</h3>
+
+
+
+<p>设函数 \( y = f(x) \) 在点 \( x_0 \) 的某一邻域内有定义，如果</p>
+
+
+
+<p>$$ \lim \limits_{\Delta x \to 0} \Delta y = \lim \limits_{\Delta x \to \infty} [f(x_0 + x) - f(x_0)] = 0 \ ， $$</p>
+
+
+
+<p>或</p>
+
+
+
+<p>$$ \lim \limits_{x \to x_0} f(x) = f(x_0) \ ， $$</p>
+
+
+
+<p>那么就称 \( y = f(x) \) 在点 \( x_0 \) 连续。</p>
+
+
+
+<p>用 \( \epsilon - \delta \) 语言叙述则为：\( f(x) \) 在点 \( x_0 \) 连续 \( \Leftrightarrow \forall \epsilon &gt; 0 \) ， \( \exists \delta &gt; 0 \) ，当 \( | x - x_0 | &lt; \delta \) 时，有 \( | f(x) - f(x_0) &lt; \epsilon | \) 。</p>
+
+
+
+<p><strong>左连续</strong>：如果 \( \lim \limits_{x \to x_0^-} f(x) = f(x_0^-) \) 存在且等于 \( f(x_0) \) ，那么就说 \( f(x) \) 在点 \( x_0 \) 左连续。</p>
+
+
+
+<p><strong>右连续</strong>：如果 \( \lim \limits_{x \to x_0^+} f(x) = f(x_0^+) \) 存在且等于 \( f(x_0) \) ，那么就说 \( f(x) \) 在点 \( x_0 \) 右连续。</p>
+
+
+
+<p>在区间上每一点都连续的函数，叫做<strong>在该区间上的连续函数</strong>，或者说<strong>函数在该区间上连续</strong>。如果函数包含端点，那么函数在右端点上连续是指左连续，在左端点上连续是指右连续。</p>
+
+
+
+<p>连续函数的曲线是一条连续而不间断的曲线。</p>
+
+
+
+<h3 class="wp-block-heading">间断点</h3>
+
+
+
+<p>设函数 \( f(x) \) 在点 \( x_0 \) 的某去心邻域有定义，在此前提下，如果函数 \( f(x) \) 有下列三种情形之一：</p>
+
+
+
+<ol class="wp-block-list">
+<li>在 \( x = x_0 \) 没有定义；</li>
+
+
+
+<li>虽在 \( x = x_0 \) 有定义，但 \( \lim \limits_{x \to x_0} f(x) \) 不存在；</li>
+
+
+
+<li>虽在 \( x = x_0 \) 有定义，且 \( \lim \limits_{x \to x_0} f(x) \) 存在，但 \( \lim \limits_{x \to \x_0} \ne f(x_0) \) 。</li>
+</ol>
+
+
+
+<p>那么函数 \( f(x) \) 在点 \( x_0 \) 为不连续，而点 \( x_0 \) 称为函数 \( f(x) \) 的<strong>不连续点</strong>或<strong>间断点</strong>。</p>
+
+
+
+<p>下面是函数间断点的几种常见类型呐~</p>
+
+
+
+<ol class="wp-block-list">
+<li>无穷间断点（ \( \lim \limits_{x \to x_0} = \infty \) ，属于第二类间断点awa）；</li>
+
+
+
+<li>震荡间断点（ \( \lim \limits_{x \to 0} \sin \dfrac{1}{x} \) ，自己画图感受去吧hh，属于第二类间断点awa）；</li>
+
+
+
+<li>可去间断点（ \( f(x_0^-) = f(x_0^+) \) ，但是 \( f(x_0) \) 不存在，属于第一类间断点awa）；</li>
+
+
+
+<li>跳跃间断点（ \( f(x_0^-) \ne f(x_0^+) \) ，属于第一类间断点awa）。</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">6. 连续函数的运算与初等函数的连续性</h2>
+
+
+
+<p><strong>定理 1</strong> 设函数 \( f(x) \) 和 \( g(x) \) 在点 \( x_0 \) 连续，则它们的和、差、积、商（当 \( g(x) \ne 0 \) 时），都在点 \( x_0 \) 连续。</p>
+
+
+
+<p><strong>定理 2</strong> 如果函数 \( y = f(x) \) 在区间 \( I_x \) 上单调增加（或单调减少）且连续，那么它的反函数 \( x = f^{-1}(y) \) 也在对应的区间 \( I_y = \{ y | y = f(x) ，x \in I_x \} \) 上单调增加（或单调减少）且连续</p>
+
+
+
+<p><strong>定理 3</strong> 设函数 \( y = f[g(x)] \) 由函数 \( u = g(x) \)  和 \( y = f(u) \) 复合而成， \( \mathring{U} (x_0) \subset D_{f \circ g} \) 。若 \( \lim \limits_{x \to x_0} g(x) = u_0 \) ，而函数 \( y = f(u) \) 在 \( u = u_0 \) 连续，则</p>
+
+
+
+<p>$$ \lim \limits_{x \to x_0} f[g(x)] = \lim \limits_{u \to u_0} f(u) = f(u_0) \ . $$</p>
+
+
+
+<p><strong>定理 4</strong> 设函数 \( y = f[g(x)] \) 是由函数 \( u = g(x) \) 与函数 \( y = f(u) \) 复合而成，\( U(x_0) \subset D_{f \circ g} \) 。若函数 \( u = g(x) \) 在 \( x = x_0 \) 连续，且 \( g(x_0) = u_0 \) ，而函数 \( y = f(u) \) 在 \( u = u_0 \) 连续，则复合函数 \( y = f[g(x)] \) 在 \( x = x_0 \) 也连续。</p>
+
+
+
+<p><strong>定理 5</strong> 基本初等函数及一切初等函数在其定义区间内都是连续的。所谓定义区间，就是包含在定义域内的区间。</p>
+
+
+
+<h2 class="wp-block-heading">7. 闭区间上连续函数的性质</h2>
+
+
+
+<p><strong>定理 1（有界性与最大值最小值定理）</strong> 在闭区间上连续的函数在该区间上有界且一定能取得它的最大值和最小值。</p>
+
+
+
+<p>（注：此处最大/小值与上文中上/下确界类似）</p>
+
+
+
+<p><strong>定理 2（零点定理）</strong> 设函数 \( f(x) \) 在闭区间 \( [a，b] \) 上连续，且 \( f(a) \) 与 \( f(b) \) 异号（即 \( f(a) \dot f(b) &lt; ) \) ），则在开区间 \( (a，b) \) 内至少有一点 \( \zeta \) ，使</p>
+
+
+
+<p>$$ f(\zeta) = 0 \ . $$</p>
+
+
+
+<p><strong>定理 3（介值定理）</strong> 设函数 \( f(x) \) 在比期间 \( [a，b] \) 上连续，且在这区间的端点取不同的函数值</p>
+
+
+
+<p>$$ f(a) = A 及 f(b) = B \ ， $$</p>
+
+
+
+<p>则对于 \( A \) 与 \( B \) 之间的任意一个数 \( C \) ，在开区间 \( (a，b) \) 内至少有一点 \( \zeta \) ，使得</p>
+
+
+
+<p>$$ f(\zeta) = C \ (a &lt; \zeta &lt; b) \ . $$</p>
+
+
+
+<p><strong>推论</strong> 在闭区间 \( [a，b] \) 上连续的函数 \( f(x) \) 的值域为闭区间 \( [m，M] \) ，其中 \( m \) 与 \( M \) 依次为 \( f(x) \) 在 \( [a，b] \) 上的最小值与最大值。</p>
+
+
+
+<h3 class="wp-block-heading">一致连续性</h3>
+
+
+
+<h4 class="wp-block-heading">定义</h4>
+
+
+
+<p>设函数 \( f(x) \) 在 \( I \) 上有定义。如果对于任意给定的正数 \( \epsilon \) ，总存在正数 \( \delta \) ，使得对于区间 \( I \) 上的任意两点 \( x_1 \) 、 \( x_2 \) ，当 \( | x_1 - x_2 | &lt; \delta \) 时，有</p>
+
+
+
+<p>$$ | f(x_1) - f(x_2) | &lt; \epsilon \ ， $$</p>
+
+
+
+<p>那么称函数 \( f(x) \ ) 在区间上一致连续。</p>
+
+
+
+<p><s>（可能一直连续性说白了就是平坦罢。）</s></p>
+
+
+
+<h4 class="wp-block-heading">定理 4 （一致连续性定理）</h4>
+
+
+
+<p>如果函数 \( f(x) \) 在闭区间 \( [a，b] \) 上连续，那么它在该区间上一致连续。</p>
+				<!--<div class="oshimai"></div>-->
+		<!--<h2 style="opacity:0;max-height:0;margin:0">Comments</h2>--><!-- 评论跳转标记 -->
+	</div>
+<!-- .entry-content -->
+	<footer class="post-footer">
+    <div class="post-lincenses">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow">
+            <i class="fa-brands fa-creative-commons"></i>
+        </a>
+    </div>
+        <section class="author-profile">
+                <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            <a href="https://sukamoka.github.io/author/czy430/" class="profile gravatar">
+                <img class="fa-spin" style="--fa-animation-duration: 15s;" src="https://sukamoka.github.io/wp-content/uploads/2023/09/Chtholly_2.png" itemprop="image" alt="czy430" height="30" width="30">
+            </a>
+        </div>
+        <div class="meta">
+            <a href="https://sukamoka.github.io/author/czy430/" itemprop="url" rel="author">czy430</a>						
+        </div>
+                    <div class="desc">
+                <i class="fa-solid fa-feather" aria-hidden="true"></i>我永远喜欢珂朵莉            </div>
+            </section>
+    <div class="post-modified-time">
+        <i class="fa-solid fa-calendar-day" aria-hidden="true"></i>最后更新于 2023-10-06    </div>
+    <div class="post-tags">
+        <i class="fa-solid fa-tag" aria-hidden="true"></i> 啥也没有呀    </div>
+</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+<div class="toc-container"><div class="toc"></div></div>
+<section class="post-squares nextprev">
+		<div class="post-nepre half previous">
+		<a href="https://sukamoka.github.io/2023/09/05/%e8%a1%8c%e5%88%97%e5%bc%8f/" rel="prev"><div class="background lazyload" style="background-image:url(https://s.nmxc.ltd/sakurairo_vision/@2.6/load_svg/outload.svg);" data-src="https://sukamoka.github.io/wp-json/sakura/v1/image/feature?748"></div>
+<span class="label">上一篇文章</span><div class="info">
+<h3>行列式</h3>
+<hr>
+</div></a>	</div>
+	<div class="post-nepre half next">
+		<a href="https://sukamoka.github.io/2023/09/18/%e9%ab%98%e6%96%af%e6%b6%88%e5%85%83%e6%b3%95__trashed/" rel="next"><div class="background lazyload" style="background-image:url(https://s.nmxc.ltd/sakurairo_vision/@2.6/load_svg/outload.svg);" data-src="https://sukamoka.github.io/wp-json/sakura/v1/image/feature?316"></div>
+<span class="label">下一篇文章</span><div class="info">
+<h3>高斯消元法</h3>
+<hr>
+</div></a>	</div>
+</section>
+		</main><!-- #main -->
+	</div>
+<!-- #primary -->
+	</div>
+<!-- #content -->
+	
+	
+	<section id="comments" class="comments">
+		<div class="commentwrap comments-hidden">
+			<div class="notification">
+<i class="fa-regular fa-comment"></i>查看评论 -
+			<span class="noticom">NOTHING </span>
+			</div>
+		</div>
+		<div class="comments-main">
+		 <h3 id="comments-list-title">Comments <span class="noticom">NOTHING </span>
+</h3> 
+		<div id="loading-comments"><span></span></div>
+			
+									<div class="commentwrap">
+						<div class="notification-hidden">
+<i class="fa-regular fa-comment"></i> 暂无评论</div>
+					
+					</div>
+				
+			
+				<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"> <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://sukamoka.github.io/2023/09/07/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%88%9D%E6%AD%A5/#respond" style="display:none;">取消回复</a></small>
+</h3>
+<form action="https://sukamoka.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p style="font-style:italic"><a href="https://segmentfault.com/markdown" target="_blank"><i class="fa-brands fa-markdown" style="color:var(--comment_area_matching);"></i></a> Markdown Supported while <i class="fa-solid fa-code"></i> Forbidden</p>
+<div class="comment-textarea">
+<textarea placeholder="你是我一生只会遇见一次的惊喜 ..." name="comment" class="commentbody" id="comment" rows="5" tabindex="4"></textarea><label class="input-label">你是我一生只会遇见一次的惊喜 ...</label>
+</div>
+                        <div id="upload-img-show"></div>
+                        <!--插入表情面版-->
+                        <p id="emotion-toggle" class="no-select">
+                            <span class="emotion-toggle-off">戳我呀 OωO</span>
+                            <span class="emotion-toggle-on">嘿嘿嘿 ヾ(≧∇≦*)ゝ</span>
+                        </p>
+                        <div class="emotion-box no-select">
+                            <table class="motion-switcher-table">
+                                <tr>
+<th onclick="motionSwitch('.bili')" class="bili-bar on-hover">bilibili~</th>
+                                    <th onclick="motionSwitch('.menhera')" class="menhera-bar">(=・ω・=)</th>
+                                    <th onclick="motionSwitch('.tieba')" class="tieba-bar">Tieba</th>
+                                </tr>
+                            </table>
+                            <div class="bili-container motion-container">
+<span title="baiyan" onclick="grin('baiyan',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_baiyan.png"></span><span title="bishi" onclick="grin('bishi',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_bishi.png"></span><span title="bizui" onclick="grin('bizui',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_bizui.png"></span><span title="chan" onclick="grin('chan',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_chan.png"></span><span title="dai" onclick="grin('dai',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_dai.png"></span><span title="daku" onclick="grin('daku',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_daku.png"></span><span title="dalao" onclick="grin('dalao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_dalao.png"></span><span title="dalian" onclick="grin('dalian',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_dalian.png"></span><span title="dianzan" onclick="grin('dianzan',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_dianzan.png"></span><span title="doge" onclick="grin('doge',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_doge.png"></span><span title="facai" onclick="grin('facai',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_facai.png"></span><span title="fanu" onclick="grin('fanu',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_fanu.png"></span><span title="ganga" onclick="grin('ganga',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_ganga.png"></span><span title="guilian" onclick="grin('guilian',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_guilian.png"></span><span title="guzhang" onclick="grin('guzhang',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_guzhang.png"></span><span title="haixiu" onclick="grin('haixiu',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_haixiu.png"></span><span title="heirenwenhao" onclick="grin('heirenwenhao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_heirenwenhao.png"></span><span title="huaixiao" onclick="grin('huaixiao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_huaixiao.png"></span><span title="jingxia" onclick="grin('jingxia',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_jingxia.png"></span><span title="keai" onclick="grin('keai',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_keai.png"></span><span title="koubizi" onclick="grin('koubizi',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_koubizi.png"></span><span title="kun" onclick="grin('kun',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_kun.png"></span><span title="lengmo" onclick="grin('lengmo',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_lengmo.png"></span><span title="liubixue" onclick="grin('liubixue',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_liubixue.png"></span><span title="liuhan" onclick="grin('liuhan',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_liuhan.png"></span><span title="liulei" onclick="grin('liulei',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_liulei.png"></span><span title="miantian" onclick="grin('miantian',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_miantian.png"></span><span title="mudengkoudai" onclick="grin('mudengkoudai',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_mudengkoudai.png"></span><span title="nanguo" onclick="grin('nanguo',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_nanguo.png"></span><span title="outu" onclick="grin('outu',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_outu.png"></span><span title="qinqin" onclick="grin('qinqin',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_qinqin.png"></span><span title="se" onclick="grin('se',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_se.png"></span><span title="shengbing" onclick="grin('shengbing',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_shengbing.png"></span><span title="shengqi" onclick="grin('shengqi',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_shengqi.png"></span><span title="shuizhao" onclick="grin('shuizhao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_shuizhao.png"></span><span title="sikao" onclick="grin('sikao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_sikao.png"></span><span title="tiaokan" onclick="grin('tiaokan',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_tiaokan.png"></span><span title="tiaopi" onclick="grin('tiaopi',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_tiaopi.png"></span><span title="touxiao" onclick="grin('touxiao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_touxiao.png"></span><span title="tuxue" onclick="grin('tuxue',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_tuxue.png"></span><span title="weiqu" onclick="grin('weiqu',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_weiqu.png"></span><span title="weixiao" onclick="grin('weixiao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_weixiao.png"></span><span title="wunai" onclick="grin('wunai',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_wunai.png"></span><span title="xiaoku" onclick="grin('xiaoku',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_xiaoku.png"></span><span title="xieyanxiao" onclick="grin('xieyanxiao',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_xieyanxiao.png"></span><span title="yiwen" onclick="grin('yiwen',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_yiwen.png"></span><span title="yun" onclick="grin('yun',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_yun.png"></span><span title="zaijian" onclick="grin('zaijian',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_zaijian.png"></span><span title="zhoumei" onclick="grin('zhoumei',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_zhoumei.png"></span><span title="zhuakuang" onclick="grin('zhuakuang',type = 'Math')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/bilipng/emoji_zhuakuang.png"></span>
+</div>
+<div class="menhera-container motion-container" style="display:none;">
+        <a class="emoji-item">(⌒▽⌒)</a>
+        <a class="emoji-item">（￣▽￣）</a>
+        <a class="emoji-item">(=・ω・=)</a>
+        <a class="emoji-item">(｀・ω・´)</a>
+        <a class="emoji-item">(〜￣△￣)〜</a>
+        <a class="emoji-item">(･∀･)</a>
+        <a class="emoji-item">(°∀°)ﾉ</a>
+        <a class="emoji-item">(￣3￣)</a>
+        <a class="emoji-item">╮(￣▽￣)╭</a>
+        <a class="emoji-item">(´_ゝ｀)</a>
+        <a class="emoji-item">←_←</a>
+        <a class="emoji-item">→_→</a>
+        <a class="emoji-item">(&lt;_&lt;)</a>
+        <a class="emoji-item">(&gt;_&gt;)</a>
+        <a class="emoji-item">(;¬_¬)</a>
+        <a class="emoji-item">("▔□▔)/</a>
+        <a class="emoji-item">(ﾟДﾟ≡ﾟдﾟ)!?</a>
+        <a class="emoji-item">Σ(ﾟдﾟ;)</a>
+        <a class="emoji-item">Σ(￣□￣||)</a>
+        <a class="emoji-item">(’；ω；‘)</a>
+        <a class="emoji-item">（/TДT)/</a>
+        <a class="emoji-item">(^・ω・^ )</a>
+        <a class="emoji-item">(｡･ω･｡)</a>
+        <a class="emoji-item">(●￣(ｴ)￣●)</a>
+        <a class="emoji-item">ε=ε=(ノ≧∇≦)ノ</a>
+        <a class="emoji-item">(’･_･‘)</a>
+        <a class="emoji-item">(-_-#)</a>
+        <a class="emoji-item">（￣へ￣）</a>
+        <a class="emoji-item">(￣ε(#￣)Σ</a>
+        <a class="emoji-item">ヽ(‘Д’)ﾉ</a>
+        <a class="emoji-item">（#-_-)┯━┯</a>
+        <a class="emoji-item">(╯°口°)╯(┴—┴</a>
+        <a class="emoji-item">←◡←</a>
+        <a class="emoji-item">( ♥д♥)</a>
+        <a class="emoji-item">_(:3」∠)_</a>
+        <a class="emoji-item">Σ&gt;―(〃°ω°〃)♡→</a>
+        <a class="emoji-item">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</a>
+        <a class="emoji-item">(╬ﾟдﾟ)▄︻┻┳═一</a>
+        <a class="emoji-item">･*･:≡(　ε:)</a>
+        <a class="emoji-item">(笑)</a>
+        <a class="emoji-item">(汗)</a>
+        <a class="emoji-item">(泣)</a>
+        <a class="emoji-item">(苦笑)</a>
+    
+                            </div>
+                            <div class="tieba-container motion-container" style="display:none;">
+<span title="good" onclick="grin('good',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_good.png"></span><span title="han" onclick="grin('han',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_han.png"></span><span title="spray" onclick="grin('spray',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_spray.png"></span><span title="Grievance" onclick="grin('Grievance',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_Grievance.png"></span><span title="shui" onclick="grin('shui',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_shui.png"></span><span title="reluctantly" onclick="grin('reluctantly',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_reluctantly.png"></span><span title="anger" onclick="grin('anger',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_anger.png"></span><span title="tongue" onclick="grin('tongue',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_tongue.png"></span><span title="se" onclick="grin('se',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_se.png"></span><span title="haha" onclick="grin('haha',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_haha.png"></span><span title="rmb" onclick="grin('rmb',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_rmb.png"></span><span title="doubt" onclick="grin('doubt',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_doubt.png"></span><span title="tear" onclick="grin('tear',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_tear.png"></span><span title="surprised2" onclick="grin('surprised2',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_surprised2.png"></span><span title="Happy" onclick="grin('Happy',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_Happy.png"></span><span title="ku" onclick="grin('ku',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_ku.png"></span><span title="surprised" onclick="grin('surprised',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_surprised.png"></span><span title="theblackline" onclick="grin('theblackline',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_theblackline.png"></span><span title="smilingeyes" onclick="grin('smilingeyes',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_smilingeyes.png"></span><span title="spit" onclick="grin('spit',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_spit.png"></span><span title="huaji" onclick="grin('huaji',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_huaji.png"></span><span title="bbd" onclick="grin('bbd',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_bbd.png"></span><span title="hu" onclick="grin('hu',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_hu.png"></span><span title="shame" onclick="grin('shame',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_shame.png"></span><span title="naive" onclick="grin('naive',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_naive.png"></span><span title="rbq" onclick="grin('rbq',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_rbq.png"></span><span title="britan" onclick="grin('britan',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_britan.png"></span><span title="aa" onclick="grin('aa',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_aa.png"></span><span title="niconiconi" onclick="grin('niconiconi',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_niconiconi.png"></span><span title="niconiconi_t" onclick="grin('niconiconi_t',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_niconiconi_t.png"></span><span title="niconiconit" onclick="grin('niconiconit',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_niconiconit.png"></span><span title="awesome" onclick="grin('awesome',type = 'tieba')"><img loading="lazy" src="https://s.nmxc.ltd/sakurairo_vision/@2.6/smilies/tiebapng/icon_awesome.png"></span>
+</div>
+                        </div>
+                        <!--表情面版完--><div class="cmt-info-container">
+<div class="comment-user-avatar">
+<img src="https://s.nmxc.ltd/sakurairo_vision/@2.6/basic/avatar.jpeg"><div class="socila-check qq-check"><i class="fa-brands fa-qq"></i></div>
+<div class="socila-check gravatar-check"><i class="fa-solid fa-face-kiss-wink-heart"></i></div>
+</div>
+<div class="popup cmt-popup cmt-author" onclick="cmt_showPopup(this)">
+<span class="popuptext" id="thePopup" style="margin-left: -115px;width: 230px;">输入QQ号将自动拉取昵称和头像</span><input type="text" placeholder="昵称或QQ号 (昵称 )" name="author" id="author" value="" size="22" autocomplete="off" tabindex="1" aria-required="true">
+</div>
+<div class="popup cmt-popup" onclick="cmt_showPopup(this)">
+<span class="popuptext" id="thePopup" style="margin-left: -65px;width: 130px;">你将收到回复通知</span><input type="text" placeholder="邮箱 (必须* )" name="email" id="email" value="" size="22" tabindex="1" autocomplete="off" aria-required="true">
+</div>
+<div class="popup cmt-popup" onclick="cmt_showPopup(this)">
+<span class="popuptext" id="thePopup" style="margin-left: -55px;width: 110px;">禁止小广告😀</span><input type="text" placeholder="网站" name="url" id="url" value="" size="22" autocomplete="off" tabindex="1">
+</div>
+</div>
+<input type="text" placeholder="QQ" name="new_field_qq" id="qq" value="" style="display:none" autocomplete="off"><!--此栏不可见-->
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">在此浏览器中保存我的显示名称、邮箱地址和网站地址，以便下次评论时使用。</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="BiuBiuBiu~"> <input type="hidden" name="comment_post_ID" value="279" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+</form>	</div>
+<!-- #respond -->
+	
+		</div>
+
+
+	</section>
+</div>
+<!-- #page Pjax container-->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info" theme-info="Sakurairo v2.6.2">
+			<div class="footertext">
+				<div class="img-preload">
+					<img src="https://s.nmxc.ltd/sakurairo_vision/@2.6/load_svg/ball.svg"><!-- 加载下一部分圈圈 -->
+				</div>
+				<div class="sakura-icon" style="width:max-content;height:max-content;margin: auto;">
+				<svg width="30px" height="30px" t="1682340134496" class="sakura-svg" viewbox="0 0 1049 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5240"><path d="M525.58396628 573.34694353s268.83106938-2.62915481 309.36387092 193.24287089l-76.46458293 21.90962291 12.92667757 84.13295086a214.05701289 214.05701289 0 0 1-96.84053193-4.82011663A224.79272784 224.79272784 0 0 1 525.58396628 578.38615666z" fill="#EE9ca7" p-id="5241"></path><path d="M552.75189802 512.4381922s131.45773592-233.7756732 321.63325979-170.89505575L854.2283053 418.66500728l79.31283344 30.89256828a215.59068679 215.59068679 0 0 1-52.58309388 81.50379604 224.57363215 224.57363215 0 0 1-325.35789552-14.67944718z" fill="#EE9ca7" p-id="5242"></path><path d="M508.49446078 494.0341093S317.00435871 306.48774025 426.77156822 139.31731943l69.4535037 38.78003191L547.4935884 109.30113636a214.05701289 214.05701289 0 0 1 65.72886796 71.86356201 225.01182435 225.01182435 0 0 1-98.37420505 310.67844912z" fill="#EE9ca7" p-id="5243"></path><path d="M473.21996809 525.58396628S242.2925454 661.64272234 109.30113636 512.4381922l55.43134521-57.18411482-53.45947909-65.72886795a213.61882069 213.61882069 0 0 1 86.32391269-43.81924506 224.79272784 224.79272784 0 0 1 274.527572 175.27698099z" fill="#EE9ca7" p-id="5244"></path><path d="M481.76472043 566.55496s72.0826585 258.31445093-106.4807652 348.14390364l-40.31370582-68.13892627-78.21735252 34.17901099a212.30424328 212.30424328 0 0 1-20.15685331-94.64956933 224.57363215 224.57363215 0 0 1 241.00584894-219.09622602z" fill="#EE9ca7" p-id="5245"></path></svg>
+				</div>
+				<p style="color: #666666;">Copyright © by FUUKEI All Rights Reserved.</p>
+			</div>
+			<div class="footer-device function_area">
+											<p id="footer_yiyan"></p>
+											<span style="color: #b9b9b9;">
+																		                        <br>
+						<a href="https://github.com/mirai-mamori/Sakurairo" rel="noopener" target="_blank" id="site-info">Theme Sakurairo</a><a href="https://fuukei.org/" rel="noopener" target="_blank" id="site-info"> by Fuukei</a> 
+					</span>
+			</div>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+	</section><!-- #section -->
+	<!-- m-nav-center -->
+	<div id="mo-nav">
+		<div class="m-avatar">
+						<img src="https://sukamoka.github.io/wp-content/uploads/2023/09/Chtholly_2.png">
+		</div>
+		<div class="m-search">
+			<form class="m-search-form" method="get" action="https://sukamoka.github.io" role="search">
+				<input class="m-search-input" type="search" name="s" placeholder="搜索..." required>
+			</form>
+		</div>
+		<div class="menu"><ul>
+<li><a href="https://sukamoka.github.io/about/">About</a></li>
+</ul></div>
+	</div>
+<!-- m-nav-center end -->
+	<button id="moblieGoTop" title="回到顶部"><i class="fa-solid fa-caret-up fa-lg"></i></button>
+  <button id="changskin" title="控制面板"><i class="fa-solid fa-compass-drafting fa-lg fa-flip" style="--fa-animation-duration: 3s;"></i></button>
+	<!-- search start -->
+	<form class="js-search search-form search-form--modal" method="get" action="https://sukamoka.github.io" role="search">
+		<div class="search-form__inner">
+					<div class="micro">
+				<p class="micro mb-">想要找点什么呢？</p>
+				<input class="text-input" type="search" name="s" placeholder="搜索" required>
+			</div>
+				</div>
+		<div class="search_close"></div>
+	</form>
+	<!-- search end -->
+<script type="text/javascript" src="https://s.nmxc.ltd/sakurairo/@2.6.2/js/smoothscroll.js?ver=2.6.2" id="SmoothScroll-js"></script>
+<script type="text/javascript" src="https://sukamoka.github.io/wp-content/themes/Sakurairo-2.6.2/js/polyfill.js?ver=2.6.2" id="polyfills-js"></script>
+<script type="text/javascript" id="app-js-before">
+/* <![CDATA[ */
+var _iro = {"pjax":true,"movies":"close","windowheight":"auto","ajaxurl":"https:\/\/sukamoka.github.io\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","api":"https:\/\/sukamoka.github.io\/wp-json\/","nonce":"344b23d764","google_analytics_id":"","gravatar_url":"weavatar.com\/avatar","NProgressON":true,"audio":true,"baguetteBox":false,"fancybox":false,"darkmode":false,"email_domain":"","email_name":"","ext_shared_lib":"","cookie_version_control":"","qzone_autocomplete":false,"site_name":"珂学小屋","author_name":"czy430","template_url":"https:\/\/sukamoka.github.io\/wp-content\/themes\/Sakurairo-2.6.2","site_url":"https:\/\/sukamoka.github.io","qq_api_url":"https:\/\/sukamoka.github.io\/wp-json\/sakura\/v1\/qqinfo\/json","land_at_home":false,"live_search":false,"loading_ph":"https:\/\/s.nmxc.ltd\/sakurairo_vision\/@2.6\/load_svg\/inload.svg","clipboardCopyright":true,"entry_content_style":"sakurairo","random_graphs_mts":true,"code_highlight":"hljs","comment_upload_img":false,"cache_cover":true,"site_bg_as_cover":false,"yiyan_api":["https:\/\/v1.hitokoto.cn\/","https:\/\/api.nmxc.ltd\/yiyan\/"],"skin_bg0":"","skin_bg1":"https:\/\/sukamoka.github.io\/wp-content\/uploads\/2023\/09\/pic-5.png","skin_bg2":"https:\/\/sukamoka.github.io\/wp-content\/uploads\/2023\/09\/pic-6.png","skin_bg3":"https:\/\/sukamoka.github.io\/wp-content\/uploads\/2023\/09\/pic-7.png","skin_bg4":"https:\/\/sukamoka.github.io\/wp-content\/uploads\/2023\/09\/pic-2-scaled.jpg","cover_api":"https:\/\/sukamoka.github.io\/wp-json\/sakura\/v1\/image\/cover","float_player_on":true,"meting_api_url":"https:\/\/sukamoka.github.io\/wp-json\/sakura\/v1\/meting\/aplayer","effect":{"amount":"native"}}
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://sukamoka.github.io/wp-content/themes/Sakurairo-2.6.2/js/app.js?ver=2.6.2" id="app-js"></script>
+<script type="text/javascript" src="https://sukamoka.github.io/wp-content/themes/Sakurairo-2.6.2/js/page.js?ver=2.6.2" id="app-page-js"></script>
+<script type="text/javascript" src="https://sukamoka.github.io/wp-includes/js/comment-reply.min.js?ver=6.7" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<div class="skin-menu no-select">
+          
+  <div class="theme-controls row-container">
+      <ul class="menu-list">
+      <li id="white-bg" title="浅色模式">
+        <i class="fa-solid fa-display fa-sm"></i>
+      </li>
+<!--Default-->
+      <li id="dark-bg" title="深色模式">
+        <i class="fa-regular fa-moon"></i>
+      </li>
+<!--Night-->
+    </ul>
+    	<ul class="menu-list" title="切换页面背景图像">
+	  <li id="diy1-bg"><i class="fa-regular fa-heart"></i></li>
+<li id="diy2-bg"><i class="fa-regular fa-star"></i></li>
+<li id="diy3-bg"><i class="fa-brands fa-delicious"></i></li>
+<li id="diy4-bg"><i class="fa-regular fa-lemon"></i></li>  </ul>
+      
+	<div class="font-family-controls row-container">
+    <button type="button" class="control-btn-serif selected" title="切换到字体 A" data-name="serif">
+      <i class="fa-solid fa-font fa-lg"></i>
+    </button>
+    <button type="button" class="control-btn-sans-serif" title="切换到字体 B" data-name="sans-serif">
+      <i class="fa-solid fa-bold fa-lg"></i>
+    </button>
+  </div>
+    </div>
+</div>
+    <div id="aplayer-float" style="z-index: 100;" class="aplayer" data-id="8644152567" data-server="netease" data-preload="auto" data-type="playlist" data-fixed="true" data-order="random" data-volume="0.6" data-theme="#609ed7">
+    </div>
+
+<!-- 首页波浪特效 -->
+
+</body>
+<!-- Particles动效 -->
+</html>

@@ -1,0 +1,76 @@
+<title>CodeMirror: N-Triples mode</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/doc/docs.css">
+
+<link rel="stylesheet" href="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/lib/codemirror.css">
+<script src="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/lib/codemirror.js"></script>
+<script src="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/mode/ntriples/ntriples.js"></script>
+<style>.CodeMirror {
+        border: 1px solid #eee;
+        height: auto;
+      }</style>
+
+
+<div id="nav">
+  <a href="https://codemirror.net/"><h1>CodeMirror</h1>
+<img id="logo" src="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/doc/logo.png" alt=""></a>
+
+  <ul>
+    <li>
+<a href="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/index.html">Home</a>
+    </li>
+<li>
+<a href="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/doc/manual.html">Manual</a>
+    </li>
+<li>
+<a href="https://github.com/codemirror/codemirror">Code</a>
+  </li>
+</ul>
+  <ul>
+    <li>
+<a href="https://sukamoka.github.io/wp-content/plugins/wp-editormd/assets/CodeMirror/mode/index.html">Language modes</a>
+    </li>
+<li>
+<a class="active" href="#">N-Triples/N-Quads</a>
+  </li>
+</ul>
+</div>
+
+<article>
+  <h2>
+<a href="https://www.w3.org/TR/n-triples/">N-Triples</a> mode</h2>
+  <p>The N-Triples mode also works well with on
+    <a href="https://www.w3.org/TR/n-quads/">N-Quad</a> documents.
+  </p>
+<form>
+<textarea id="ntriples" name="ntriples">    
+<http:>     <http:>     <http:> .
+<http:>     <http:> "literal 1" .
+<http:> <http:>     _:bnode3 .
+_:bnode4          <http:>     "literal 2"@lang .
+_:bnode5          <http:>     "literal 3"^^<http:> .
+</http:></http:></http:></http:></http:></http:></http:></http:></http:></http:></textarea>
+</form>
+
+    <script>var editor = CodeMirror.fromTextArea(document.getElementById("ntriples"), {});</script>
+    <p><strong>MIME types defined:</strong> <code>application/n-triples</code>.</p>
+
+    <hr>
+    <p><a href="https://www.w3.org/TR/n-quads/">N-Quads</a> add a fourth
+    element to the statement to track which graph the statement is from.
+    Otherwise, it's identical to N-Triples.</p>
+    <form>
+    <textarea id="nquads" name="nquads">
+
+    <http:>     <http:>     <http:>   <http:> .
+    <http:>     <http:> "literal 1"    <http:> .
+    <http:> <http:>     _:bnode3     <http:> .
+    _:bnode4          <http:>     "literal 2"@lang     <http:> .
+    # if a graph labe
+    _:bnode5          <http:>     "literal 3"^^<http:> .
+    </http:></http:></http:></http:></http:></http:></http:></http:></http:></http:></http:></http:></http:></http:></textarea>
+    </form>
+
+    <script>var nquads_editor = CodeMirror.fromTextArea(document.getElementById("nquads"), {});</script>
+    <p><strong>MIME types defined:</strong> <code>application/n-quads</code>.</p>
+  </article>
